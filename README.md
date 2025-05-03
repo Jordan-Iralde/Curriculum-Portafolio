@@ -13,23 +13,19 @@ Que debe tener mi Curriculum?
 
 Infromacion Personal:
 -Nombre
--Edad
+
 
 Redes Sociales Laborales:
--Mail (Institucional)
+-Mail
 -Linkedin
--Instagram
--Telefono (Otro)
+-Telefono
 -Github
 
-Portafolio:
--Github
--Pinterest
--Etc.
--Pagina Web
 
 Habilidades:
 -Blandas
 -Tecnicas
 
 Experiencia Laboral/Academica
+
+npm install react-icons
