@@ -14,7 +14,8 @@ export default function Header({ setSection }: Props) {
         <nav className={styles.navHeader}>
             <div 
                 className={styles.logo}>
-                <h1>P R O G R A M A T E</h1>
+                <a href="https://github.com/PrograMateOrg" target="_blank" rel="noopener noreferrer"><h1>PROGRA MATE</h1></a>
+                
             </div>
             <button
                 className={styles.menuToggle}

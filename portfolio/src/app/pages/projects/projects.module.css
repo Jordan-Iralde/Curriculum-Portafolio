@@ -1,0 +1,36 @@
+/* projects.module.css */
+.projectSection {
+    padding: 4rem 2rem;
+    color: #dbd8d8;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: #c0b9b9;
+  }
+  
+  .projectContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projectTitle {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+  }
+
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    
+  }
+  
+  .projectCard {
+    border-color: #000000 1px solid;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
