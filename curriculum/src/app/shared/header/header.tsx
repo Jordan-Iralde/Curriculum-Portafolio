@@ -1,22 +1,66 @@
+import { useState } from "react";
 import styles from "./header.module.css";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
-export default function header() {
+type Props = {
+  setSection: (section: "home" | "projects" | "about" | "services") => void;
+};
+
+export default function Header({ setSection }: Props) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className={styles.header}>
         <nav className={styles.navHeader}>
-            <div className={styles.logo}>
-                <img src="/logo.png" alt="Logo" className={styles.logoImg} />
+            <div 
+                className={styles.logo}>
+                <h1>P R O G R A M A T E</h1>
             </div>
-            <div className={styles.navLinks}>
-                <a href="#about" className={styles.navLink}>Inicio</a>
-                <a href="#skills" className={styles.navLink}>Proyectos</a>
-                <a href="#projects" className={styles.navLink}>Sobre mí</a>
-                <a href="#contact" className={styles.navLink}>Servicios</a>
+            <button
+                className={styles.menuToggle}
+                aria-label="Abrir menú"
+                onClick={() => setMenuOpen((prev) => !prev)}>
+                &#9776;
+            </button>
+            
+            <div className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
+                <button 
+                    onClick={() => setSection("home")} 
+                    className={styles.navLink}>
+                    Inicio
+                </button>
+                <button
+                    onClick={() => setSection("projects")}
+                    className={styles.navLink}>
+                    Proyectos
+                </button>
+                <button 
+                    onClick={() => setSection("about")} 
+                    className={styles.navLink}>
+                    Sobre mi
+                </button>
+                <button
+                    onClick={() => setSection("services")}
+                    className={styles.navLink}>
+                    Servicios
+                </button>
+
+                <div className={`${styles.socialIcons} ${menuOpen ? styles.showMenu : ""}`}>
+                    <a href="https://www.linkedin.com/in/jordanir/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin />
+                    </a>
+
+                    <a href="https://github.com/Jordan-Iralde" target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                    </a>
+                    
+                    <a href="https://wa.me/5493548576775" target="_blank" rel="noopener noreferrer">
+                        <FaWhatsapp />
+                    </a>
+                </div>
             </div>
-            <select name="Dropdown" id="Lenguaje" className={styles.select}>
-                <option value="es">Español</option>
-                <option value="en">English</option>
-            </select>
+            
+            
         </nav>
     </header>
   );

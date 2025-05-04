@@ -27,6 +27,11 @@
     margin: 5px 0;
 }
 
+.socialicons {
+    display: flex;
+    align-items: center;
+}
+
 .socialicons a {
     margin-right: 24px;
     color: #C9D1D9;
@@ -38,6 +43,7 @@
 .socialicons a:hover {
     color: #00acee;
 }
+
 
 .footersection form {
     display: flex;

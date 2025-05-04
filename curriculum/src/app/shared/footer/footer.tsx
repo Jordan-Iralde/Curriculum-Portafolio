@@ -16,7 +16,7 @@ export default function footer() {
                     <a href="https://github.com/Jordan-Iralde" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
-                    <a href="mailto:iraldejordan10@gmail.com">
+                    <a href="https://www.workana.com/freelancer/0a3b780aa3a364064d20a49f9950ae63" target="_blank" rel="noopener noreferrer">
                         <FaEnvelope />
                     </a>
                     <a href="https://wa.me/5493548576775" target="_blank" rel="noopener noreferrer">
