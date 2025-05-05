@@ -14,7 +14,7 @@ export default function projects() {
 					title="JarvisAI"
 					description="Asistente de IA personalizado que automatiza tareas técnicas mediante lenguaje natural."
 					technologies={["Python", "Tkinter", "Tensorflow", "MongoDB"]}
-					image="/images/jarvisai.png"
+					image="proyectos/jarvis.jpg"
 					liveDemoUrl="https://jordan-iralde.github.io/ProBestoJarvisAI/PaginaJarvis/"
 					repoUrl="https://github.com/Jordan-Iralde/ProBestoJarvisAI"
 					/>
@@ -34,7 +34,7 @@ export default function projects() {
 						title="MagicianGround"
 						description="Magician Ground mide el suelo con IA para mejorar la calidad de la producción agrícola."
 						technologies={["Angular", "Tkinter", "Python", "GitHub Actions"]}
-						image="/images/jarvisai.png"
+						image="proyectos/magicianground.png"
 						liveDemoUrl="bisque-eland-737804.hostingersite.com"
 						repoUrl="https://github.com/Jordan-Iralde/MagicianGround"
 					/>
