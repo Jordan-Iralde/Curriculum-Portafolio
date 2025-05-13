@@ -7,7 +7,7 @@ export default function footer() {
         
         <div className={styles.footercontainer}>
             <div className={styles.footersection}>
-                <h2>Contacto</h2>
+                <h3>Contacto</h3>
                 <p>¿Tenés un proyecto en mente? Hablemos.</p>
                 <div className={styles.socialicons}>
                     <a href="https://www.linkedin.com/in/jordanir/" target="_blank" rel="noopener noreferrer">
@@ -36,8 +36,7 @@ export default function footer() {
                 <h3>SERVICIOS</h3>
                 <p>Ingresa tu correo electrónico</p>
                 <form>
-                <input type="email" placeholder="Tu correo aquí por favor"></input>
-                <button type="submit">Enviar mi información ahora</button>
+                <p>¿Querés hablar? <a href="mailto:iraldejordan10@gmail.com">Enviame un correo</a>.</p>
                 </form>
             </div>
         </div>

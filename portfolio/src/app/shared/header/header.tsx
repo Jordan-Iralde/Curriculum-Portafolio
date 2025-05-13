@@ -14,7 +14,7 @@ export default function Header({ setSection }: Props) {
         <nav className={styles.navHeader}>
             <div 
                 className={styles.logo}>
-                <a href="https://github.com/PrograMateOrg" target="_blank" rel="noopener noreferrer"><h1>PROGRA MATE</h1></a>
+                <a href="https://github.com/CodetLab" target="_blank" rel="noopener noreferrer"><h1>Code't Lab</h1></a>
                 
             </div>
             <button
