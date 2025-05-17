@@ -10,6 +10,8 @@ export default function Projects() {
 			<h2>Explora mis proyectos innovadores y creativos en desarrollo web.</h2>
 			<div className={styles.projectList}>
 					<div className={styles.destacado}>
+					
+					<a href="https://jordan-iralde.github.io/ProBestoJarvisAI/PaginaJarvis/" target="_blank" rel="noopener noreferrer">
 					<ProjectCard
 						title="JarvisAI"
 						description="Asistente de IA personalizado que automatiza tareas técnicas mediante lenguaje natural."
@@ -17,7 +19,10 @@ export default function Projects() {
 						image="proyectos/jarvis.jpg"
 						liveDemoUrl="https://jordan-iralde.github.io/ProBestoJarvisAI/PaginaJarvis/"
 						repoUrl="https://github.com/Jordan-Iralde/ProBestoJarvisAI"
+						
 					/>
+					</a>
+					
 					</div>
 
 					<ProjectCard
@@ -54,6 +59,16 @@ export default function Projects() {
 						image="proyectos/enConstruccion.png"
 						repoUrl="#"
 					/>
+
+					<ProjectCard
+						title="Code't Lab"
+						description="Code't Lab es una agencia de desarrollo de software a medida."
+						technologies={["Angular", "NodeJs", "MongoDB"]}
+						image="codetlab.jpeg"
+						liveDemoUrl="https://codetlab.vercel.app/"
+						repoUrl="https://github.com/Jordan-Iralde/MagicianGround"
+					/>
+
 			</div>
 		</div>
 		<a href="https://github.com/Jordan-Iralde" target="_blank"><h2>GitHub seguir viendo.</h2></a>

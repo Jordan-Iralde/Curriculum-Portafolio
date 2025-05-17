@@ -31,11 +31,6 @@ export default function Header({ setSection }: Props) {
                     Inicio
                 </button>
 
-                <button 
-                    onClick={() => setSection("about")} 
-                    className={styles.navLink}>
-                    Sobre mi
-                </button>
                 <button
                     onClick={() => setSection("services")}
                     className={styles.navLink}>

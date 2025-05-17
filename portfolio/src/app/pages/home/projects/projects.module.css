@@ -1,0 +1,66 @@
+/* projects.module.css */
+.projectSection {
+    padding: 4rem 2rem;
+    color: #dbd8d8;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: #c0b9b9;
+  }
+  
+  .projectContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projectTitle {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+  }
+
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    
+  }
+
+.destacado {
+  position: relative;
+  background: linear-gradient(135deg, #c6f533, #eee25b, #e37847, #c6f533, #eee25b, #e37847);
+  background-size: 300% 300%;
+  animation: colorShift 2s ease-in-out infinite;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  border: 2px solid #b9d438;
+  font-weight: 800;
+  font-size: 1.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(200, 230, 80, 0.2);
+}
+
+.destacado:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(200, 230, 80, 0.25);
+}
+
+/* Gradiente animado suave */
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

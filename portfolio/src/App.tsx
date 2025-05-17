@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Header from './app/shared/header/header'
 import Footer from './app/shared/footer/footer'
 import Home from './app/pages/home/home'
-import Projects from './app/pages/projects/projects'
-import About from './app/pages/about/about'
 import Services from './app/pages/services/services'
 
 
@@ -16,8 +14,6 @@ function App() {
     <>
       <Header setSection={setSection} />
       {section === "home" && <Home />}
-      {section === "projects" && <Projects />}
-      {section === "about" && <About />}
       {section === "services" && <Services />}
       
       <Footer />
