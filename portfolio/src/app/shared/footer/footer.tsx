@@ -30,15 +30,6 @@ export default function footer() {
                 <p>+5493548576775</p>
                 <p>iraldejordan10@gmail.com</p>
             </div>
-
-
-            <div className={styles.footersection}>
-                <h3>SERVICIOS</h3>
-                <p>Ingresa tu correo electrónico</p>
-                <form>
-                <p>¿Querés hablar? <a href="mailto:iraldejordan10@gmail.com">Enviame un correo</a>.</p>
-                </form>
-            </div>
         </div>
 
 

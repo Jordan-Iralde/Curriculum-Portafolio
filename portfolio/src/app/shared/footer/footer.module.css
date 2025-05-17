@@ -42,6 +42,7 @@
 
 .socialicons a:hover {
     color: #00acee;
+    transform: translateY(-2px);
 }
 
 

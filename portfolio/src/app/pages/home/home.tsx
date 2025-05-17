@@ -1,4 +1,6 @@
 import styles from "./home.module.css";
+import Experiencia from "./experience/experience";
+import Projects from "../projects/projects";
 
 export default function home() {
   return (
@@ -28,8 +30,8 @@ export default function home() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
+        <Experiencia />
+        <Projects />
         <br />
         <br />
         <br />
@@ -37,3 +39,4 @@ export default function home() {
     </main>
   );
 }
+
