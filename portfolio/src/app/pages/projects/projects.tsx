@@ -9,16 +9,16 @@ export default function Projects() {
 			<h1 className={styles.projectTitle}>Proyectos Destacados</h1>
 			<h2>Explora mis proyectos innovadores y creativos en desarrollo web.</h2>
 			<div className={styles.projectList}>
-
+					<div className={styles.destacado}>
 					<ProjectCard
-					title="JarvisAI"
-					description="Asistente de IA personalizado que automatiza tareas técnicas mediante lenguaje natural."
-					technologies={["Python", "Tkinter", "Tensorflow", "MongoDB"]}
-					image="proyectos/jarvis.jpg"
-					liveDemoUrl="https://jordan-iralde.github.io/ProBestoJarvisAI/PaginaJarvis/"
-					repoUrl="https://github.com/Jordan-Iralde/ProBestoJarvisAI"
+						title="JarvisAI"
+						description="Asistente de IA personalizado que automatiza tareas técnicas mediante lenguaje natural."
+						technologies={["Python", "Tkinter", "Tensorflow", "MongoDB"]}
+						image="proyectos/jarvis.jpg"
+						liveDemoUrl="https://jordan-iralde.github.io/ProBestoJarvisAI/PaginaJarvis/"
+						repoUrl="https://github.com/Jordan-Iralde/ProBestoJarvisAI"
 					/>
-
+					</div>
 
 					<ProjectCard
 						title="Agenda Magica"
@@ -46,6 +46,14 @@ export default function Projects() {
 						repoUrl="https://github.com/Jordan-Iralde/BackendGestionVentas"
 					/>
 
+					<ProjectCard
+						title="PRoAWeb"
+						description="Pagina institucional de la escuela PRoA La Falda."
+					
+						technologies={["NextJs", "React", "CSS"]}
+						image="proyectos/enConstruccion.png"
+						repoUrl="#"
+					/>
 			</div>
 		</div>
 		<a href="https://github.com/Jordan-Iralde" target="_blank"><h2>GitHub seguir viendo.</h2></a>

@@ -4,12 +4,15 @@ export default function Experiencia() {
   return (
     <div className={styles.mainContainer}>
     {/* Imagen */}
-    <div className={styles.imageWrapper}>
-        <img
-        src="codetlab.jpeg"
-        alt="Monitor con código y libreta"
-        />
-    </div>
+    <a href="https://github.com/CodetLab" target="_blank" rel="noopener noreferrer">
+        <div className={styles.imageWrapper}>
+            <img
+            src="codetlab.jpeg"
+            alt="Monitor con código y libreta"
+            />
+        </div>
+    </a>
+   
 
     {/* Texto */}
     <div className={styles.textSection}>

@@ -30,11 +30,7 @@ export default function Header({ setSection }: Props) {
                     className={styles.navLink}>
                     Inicio
                 </button>
-                <button
-                    onClick={() => setSection("projects")}
-                    className={styles.navLink}>
-                    Proyectos
-                </button>
+
                 <button 
                     onClick={() => setSection("about")} 
                     className={styles.navLink}>
