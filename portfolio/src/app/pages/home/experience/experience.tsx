@@ -3,42 +3,44 @@ import styles from "./experience.module.css";
 export default function Experiencia() {
   return (
     <div className={styles.mainContainer}>
-    {/* Imagen */}
-    <a href="https://github.com/CodetLab" target="_blank" rel="noopener noreferrer">
+      {/* Imagen */}
+      <a href="https://github.com/CodetLab" target="_blank" rel="noopener noreferrer">
         <div className={styles.imageWrapper}>
-            <img
+          <img
             src="codetlab.jpeg"
             alt="Monitor con código y libreta"
-            />
+          />
         </div>
-    </a>
-   
+      </a>
 
-    {/* Texto */}
-    <div className={styles.textSection}>
-        <h2>Experiencia Profesional</h2>
+      {/* Texto */}
+      <div className={styles.textSection}>
+        <h2>Experiencia.</h2>
+
         <p>
-        Soy un programador full stack con un enfoque en la innovación y la
-        creatividad, listo para enfrentar nuevos desafíos...
+          Soy desarrollador full stack con foco en resultados. Actualmente aporto en <strong>Code't Lab</strong>, donde convertimos ideas en soluciones funcionales y escalables.
         </p>
 
-        <h3>Experiencia</h3>
+        <h3>Qué he logrado</h3>
+        <ul className={styles.bulletList}>
+          <li>🧠 Diseñé y desarrollé aplicaciones full stack con foco en performance y UX.</li>
+          <li>🤝 Colaboré con diseñadores y fundadores para transformar ideas en MVPs funcionales.</li>
+          <li>🚀 Implementé mejoras que optimizaron el tiempo de carga y la conversión de usuarios.</li>
+        </ul>
+        <h3>Tecnologías que domino</h3>
+        <ul className={styles.techList}>
+            <li>🔧 HTML, CSS, JavaScript, Typescript</li>
+            <li>⚙️ TypeScript, React, Angular, Bootstrap</li>
+            <li>🚀 MySQL, MongoDB</li>
+            <li>🐍 Python, C#</li>
+            <li>🛠️ Git, GitHub</li>
+        </ul>
 
-        <div>
-            <h4>Desarrollo de Proyectos</h4>
-                <p>
-                    He trabajado en diversas aplicaciones, optimizando la experiencia del usuario.
-                </p>
-            </div>
-
-            <div>
-                <h4>Colaboraciones Creativas</h4>
-                <p>
-                    Con diseño intuitivo e interfaces amigables, tu sitio cautivará visitantes.
-                </p>
-            </div>
+        <div className={styles.cvLinks}>
+          <a className={styles.cvButton} href="/CV_Espanol.pdf" download>📄 CV  Español</a>
+          <a className={styles.cvButton} href="/CV_Ingles.pdf" download>📄 CV  English</a>
         </div>
+      </div>
     </div>
-
   );
 }

@@ -78,16 +78,3 @@
 .form button:hover {
   background-color: #1e293b;
 }
-
-.imageContainer {
-  flex: 1;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.imageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

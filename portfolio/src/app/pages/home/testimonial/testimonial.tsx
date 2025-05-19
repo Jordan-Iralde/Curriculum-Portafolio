@@ -24,7 +24,7 @@ export default function Testimonials() {
       <div className={styles.testimonialContainer}>
         <h1 className={styles.testimonialTitle}>Opiniones de Clientes</h1>
         <h2 className={styles.subtitle}>
-          Descubre lo que dicen nuestros clientes sobre <strong>Jordán Iralde</strong>,
+          Opiniones sobre <strong>Jordán Iralde</strong>,
           en Workana
         </h2>
 

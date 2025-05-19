@@ -4,7 +4,7 @@ import { ProjectCard } from "./project_card/project_card";
 export default function Projects() {
 
 	return (
-		<section id="projects" className={styles.projectSection}>
+		<section className={styles.projectSection} id="projects">
 		<div className={styles.projectContainer}>
 			<h1 className={styles.projectTitle}>Proyectos Destacados</h1>
 			<h2>Explora mis proyectos innovadores y creativos en desarrollo web.</h2>
@@ -71,7 +71,7 @@ export default function Projects() {
 
 			</div>
 		</div>
-		<a href="https://github.com/Jordan-Iralde" target="_blank"><h2>GitHub seguir viendo.</h2></a>
+		<a href="https://github.com/Jordan-Iralde" target="_blank"><h2>GitHub</h2></a>
 		</section>
 	);
 }

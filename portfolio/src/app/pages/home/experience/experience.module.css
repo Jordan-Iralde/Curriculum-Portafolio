@@ -40,15 +40,14 @@
   font-size: 2.5rem;
   font-weight: 800;
   color: #111827;
-  position: relative;
   margin: 0;
 }
-
 
 .textSection h3 {
   font-size: 1.75rem;
   font-weight: 700;
   color: #2563eb;
+  margin-top: 1.5rem;
 }
 
 .textSection h4 {
@@ -62,6 +61,39 @@
   font-size: 1rem;
   line-height: 1.8;
   color: #4b5563;
+}
+
+.bulletList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bulletList li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #374151;
+  display: flex;
+  align-items: start;
+}
+
+.cvLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cvButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cvButton:hover {
+  background-color: #1e40af;
 }
 
 @media (min-width: 768px) {

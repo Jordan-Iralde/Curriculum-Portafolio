@@ -1,5 +1,5 @@
 // components/Contacto.tsx
-import styles from "./contacto.module.css";
+import styles from "./contact.module.css";
 
 export default function Contacto() {
   return (
@@ -10,7 +10,7 @@ export default function Contacto() {
       </p>
 
       <div className={styles.contactContainer}>
-        <form className={styles.form}>
+        <form className={styles.form} action="https://formsubmit.co/18cc390f79386eb1939a8beb10a76f96" method="POST">
           <label>Tu nombre completo</label>
           <input type="text" placeholder="Ingresa tu nombre aquí" />
 
@@ -22,10 +22,6 @@ export default function Contacto() {
 
           <button type="submit">Enviar mensaje</button>
         </form>
-
-        <div className={styles.imageContainer}>
-          <img src="/contacto-preview.jpg" alt="Proyectos en pantalla" />
-        </div>
       </div>
     </section>
   );
