@@ -8,7 +8,7 @@ export default function footer() {
         <div className={styles.footercontainer}>
             <div className={styles.footersection}>
                 <h3>Contacto</h3>
-                <p>¿Tenés un proyecto en mente? Hablemos.</p>
+                <p>¿Tenés un proyecto en mente?</p>
                 <div className={styles.socialicons}>
                     <a href="https://www.linkedin.com/in/jordanir/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />

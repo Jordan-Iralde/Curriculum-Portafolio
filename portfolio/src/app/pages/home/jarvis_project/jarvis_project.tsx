@@ -1,13 +1,13 @@
-import styles from "./hero.module.css";
+import styles from "./jarvis_project.module.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-export default function Hero() {
+export default function Jarvis() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay}>
         <div className={styles.content}>
           <h1>
-            Portafolio de Jordán Iralde.<br />
+            JARVIS
             <span className={styles.gradient}>Desarrollador Full Stack.</span>
           </h1>
           <p>Descubre, explora y colabora con Jordán.</p>
