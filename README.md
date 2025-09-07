@@ -1,29 +1,23 @@
-# Curriculum
+# Portfolio de Jordan Iralde
 
-Que debe tener mi Curriculum?
--Informacion Personal
--Redes Sociales Labolares
--Portafolio
--Habilidades
--Experiencia Laboral
--Experiencia Academica
+Bienvenido a mi **portafolio personal**, construido para mostrar mis proyectos, habilidades y mi marca personal como desarrollador Fullstack.
 
+Este portfolio fue creado **100% por mí**, usando **React** para la interfaz y **CSS** para el diseño y estilos personalizados. Está pensado para ser **claro, moderno y funcional**, mostrando mis proyectos de manera efectiva y profesional.
 
-Infromacion Personal:
--Nombre
+## 🚀 Tecnologías
 
+- **React** – Librería principal para construir interfaces dinámicas.
+- **CSS** – Estilos personalizados, responsive y moderno.
+- **JavaScript/TypeScript** – Lógica y componentes reutilizables.
 
-Redes Sociales Laborales:
--Mail
--Linkedin
--Telefono
--Github
+## 🎯 Objetivo
 
+El objetivo de este portfolio es **demostrar mis habilidades técnicas y mi capacidad de desarrollo**, así como la manera en que puedo crear experiencias web completas y profesionales desde cero.
 
-Habilidades:
--Blandas
--Tecnicas
+## 🔗 Deploy
 
-Experiencia Laboral/Academica
+[PortFolio](https://jordan-iralde-portfolio.vercel.app/)
 
-npm install react-icons
+---
+
+💡 Si llegaste hasta acá, ¡gracias por tu interés! Estoy siempre abierto a **colaboraciones, oportunidades laborales y proyectos desafiantes**.
