@@ -18,7 +18,7 @@ export default function Experiencia() {
         <h2>Experiencia.</h2>
 
         <p>
-          Soy desarrollador full stack con foco en resultados. Actualmente aporto en <strong>Code't Lab</strong>, donde convertimos ideas en soluciones funcionales y escalables.
+          Soy desarrollador full stack con foco en resultados.  Actualmente estoy disponible para trabajar.
         </p>
 
         <h3>Qué he logrado</h3>
