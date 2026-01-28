@@ -1,23 +1,59 @@
-# Portfolio de Jordan Iralde
+# 💼 Portfolio — Jordan Iralde
 
-Bienvenido a mi **portafolio personal**, construido para mostrar mis proyectos, habilidades y mi marca personal como desarrollador Fullstack.
-
-Este portfolio fue creado **100% por mí**, usando **React** para la interfaz y **CSS** para el diseño y estilos personalizados. Está pensado para ser **claro, moderno y funcional**, mostrando mis proyectos de manera efectiva y profesional.
-
-## 🚀 Tecnologías
-
-- **React** – Librería principal para construir interfaces dinámicas.
-- **CSS** – Estilos personalizados, responsive y moderno.
-- **JavaScript/TypeScript** – Lógica y componentes reutilizables.
-
-## 🎯 Objetivo
-
-El objetivo de este portfolio es **demostrar mis habilidades técnicas y mi capacidad de desarrollo**, así como la manera en que puedo crear experiencias web completas y profesionales desde cero.
-
-## 🔗 Deploy
-
-[PortFolio](https://jordan-iralde-portfolio.vercel.app/)
+Portafolio personal desarrollado para presentar mis **proyectos**, **habilidades técnicas** y **perfil profesional** como desarrollador **Fullstack**.
 
 ---
 
-💡 Si llegaste hasta acá, ¡gracias por tu interés! Estoy siempre abierto a **colaboraciones, oportunidades laborales y proyectos desafiantes**.
+## 🧠 Descripción
+
+Este portfolio fue diseñado y construido íntegramente por mí, con foco en:
+
+- claridad visual
+- buena experiencia de usuario
+- código mantenible
+- presentación profesional de proyectos
+
+Funciona como punto central de contacto para oportunidades laborales y colaboraciones.
+
+---
+
+## 🛠️ Tecnologías
+
+- **React** — Interfaz de usuario
+- **TypeScript / JavaScript** — Lógica y componentes
+- **CSS** — Estilos personalizados y diseño responsive
+
+---
+
+## 🎯 Objetivo
+
+- Comunicar mi perfil técnico de forma clara y directa
+- Mostrar proyectos reales y experiencia práctica
+- Servir como carta de presentación profesional
+
+---
+
+## 🌐 Deploy
+
+🔗 **Portfolio online:**  
+(https://jordan-iralde-portfolio.vercel.app/)
+
+---
+
+## 📄 Documentos
+
+- 📄 CV en Español — `CV_Espanol.pdf`
+- 📄 CV en Inglés — `CV_Ingles.pdf`
+
+---
+
+## 📬 Contacto
+
+Si te interesa mi perfil o querés ponerte en contacto por una oportunidad laboral o colaboración, este portfolio es el canal principal.
+
+---
+
+## 👤 Autor
+
+**Jordan Iralde**  
+Desarrollador Fullstack
