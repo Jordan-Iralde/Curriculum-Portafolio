@@ -1,54 +1,79 @@
-// components/Servicios.tsx
-import styles from "./services.module.css";
-import Contacto from "../home/contact/contact"
-const services = [
-  {
-    icon: "💻",
-    title: "Desarrollo Web",
-    description: "Sitios y aplicaciones modernas con React, Next.js, TypeScript y más.",
-  },
-  {
-    icon: "📱",
-    title: "Apps Mobile",
-    description: "Aplicaciones móviles híbridas eficientes con React Native o Expo.",
-  },
-  {
-    icon: "🚀",
-    title: "MVP para Startups",
-    description: "Te ayudo a lanzar un MVP funcional para validar ideas rápido.",
-  }
-];
+import { useState } from "react";
 
-const Servicios = () => {
+const Contacto = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await fetch("https://api-oyh9.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      setSuccess(true);
+      setForm({ name: "", email: "", message: "" });
+
+    } catch (err) {
+      console.error(err);
+    }
+
+    setLoading(false);
+  };
+
   return (
-    <section id="servicios" className={styles.servicesSection}>
-      <h2 className={styles.title}>Servicios que ofrezco</h2>
-      <p className={styles.subtitle}>
-        Desarrollo soluciones de software eficientes y personalizadas para personas, negocios y startups.
-      </p>
+    <form onSubmit={handleSubmit}>
+      <input
+        name="name"
+        placeholder="Nombre"
+        value={form.name}
+        onChange={handleChange}
+        required
+      />
 
-      <div className={styles.cardsContainer}>
-        {services.map((service, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.icon}>{service.icon}</div>
-            <h3 className={styles.cardTitle}>{service.title}</h3>
-            <p className={styles.cardDescription}>{service.description}</p>
-          </div>
-        ))}
-      </div>
-      <Contacto />
-      <div className={styles.ctaContainer}>
-        <a
-          href="https://wa.me/5493548576775" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className={styles.ctaButton}
-        >
-          Hablemos por WhatsApp
-        </a>
-      </div>
-    </section>
+      <input
+        name="email"
+        type="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={handleChange}
+        required
+      />
+
+      <textarea
+        name="message"
+        placeholder="Mensaje"
+        value={form.message}
+        onChange={handleChange}
+        required
+      />
+
+      <button type="submit" disabled={loading}>
+        {loading ? "Enviando..." : "Enviar"}
+      </button>
+
+      {success && <p>Mensaje enviado correctamente</p>}
+    </form>
   );
 };
 
-export default Servicios;
+export default Contacto;
