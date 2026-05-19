@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./services.module.css";
 
 const Contacto = () => {
   const [form, setForm] = useState({
@@ -10,7 +11,9 @@ const Contacto = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
@@ -31,8 +34,12 @@ const Contacto = () => {
       });
 
       setSuccess(true);
-      setForm({ name: "", email: "", message: "" });
 
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
     } catch (err) {
       console.error(err);
     }
@@ -41,38 +48,53 @@ const Contacto = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        name="name"
-        placeholder="Nombre"
-        value={form.name}
-        onChange={handleChange}
-        required
-      />
+    <div className={styles.wrapper}>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <h2 className={styles.title}>Contacto</h2>
 
-      <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        value={form.email}
-        onChange={handleChange}
-        required
-      />
+        <input
+          className={styles.input}
+          name="name"
+          placeholder="Nombre"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
 
-      <textarea
-        name="message"
-        placeholder="Mensaje"
-        value={form.message}
-        onChange={handleChange}
-        required
-      />
+        <input
+          className={styles.input}
+          name="email"
+          type="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
 
-      <button type="submit" disabled={loading}>
-        {loading ? "Enviando..." : "Enviar"}
-      </button>
+        <textarea
+          className={styles.textarea}
+          name="message"
+          placeholder="Mensaje"
+          value={form.message}
+          onChange={handleChange}
+          required
+        />
 
-      {success && <p>Mensaje enviado correctamente</p>}
-    </form>
+        <button
+          className={styles.button}
+          type="submit"
+          disabled={loading}
+        >
+          {loading ? "Enviando..." : "Enviar"}
+        </button>
+
+        {success && (
+          <p className={styles.success}>
+            Mensaje enviado correctamente
+          </p>
+        )}
+      </form>
+    </div>
   );
 };
 
